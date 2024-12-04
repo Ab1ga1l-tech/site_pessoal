@@ -1,0 +1,82 @@
+<div class="carrossel">
+  <div class="item">Item 1</div>
+  <div class="item">Item 2</div>
+  <div class="item">Item 3</div>
+  <div class="item">Item 4</div>
+  <div class="item">Item 5</div>
+</div>
+.carrossel {
+  display: flex;
+  overflow-x: scroll;
+  width: 100%; /* Tamanho do carrossel */
+  scroll-snap-type: x mandatory; /* Para fazer o "snap" ao deslizar */
+}
+
+.item {
+  flex: 0 0 auto; /* Evita que os itens se estiquem */
+  width: 300px; /* Largura dos itens */
+  height: 200px; /* Altura dos itens */
+  margin-right: 10px; /* Espaçamento entre os itens */
+  background-color: #4CAF50;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 20px;
+  scroll-snap-align: center; /* Alinha o item ao centro quando for "solto" */
+}
+grid
+<div class="carrossel-container">
+  <button class="prev">←</button>
+  <div class="carrossel">
+    <div class="item">Item 1</div>
+    <div class="item">Item 2</div>
+    <div class="item">Item 3</div>
+    <div class="item">Item 4</div>
+    <div class="item">Item 5</div>
+  </div>
+  <button class="next">→</button>
+</div>
+.carrossel-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.carrossel {
+  display: flex;
+  overflow-x: scroll;
+  scroll-snap-type: x mandatory;
+  width: 80%; /* Ajuste o tamanho do carrossel */
+}
+
+.item {
+  flex: 0 0 auto;
+  width: 300px;
+  height: 200px;
+  margin-right: 10px;
+  background-color: #4CAF50;
+  color: white;
+  font-size: 20px;
+  scroll-snap-align: center;
+}
+
+button {
+  background-color: #333;
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #555;
+}
+document.querySelector('.next').addEventListener('click', function() {
+  document.querySelector('.carrossel').scrollBy({ left: 320, behavior: 'smooth' });
+});
+
+document.querySelector('.prev').addEventListener('click', function() {
+  document.querySelector('.carrossel').scrollBy({ left: -320, behavior: 'smooth' });
+});
