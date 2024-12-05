@@ -1,82 +1,99 @@
-<div class="carrossel">
-  <div class="item">Item 1</div>
-  <div class="item">Item 2</div>
-  <div class="item">Item 3</div>
-  <div class="item">Item 4</div>
-  <div class="item">Item 5</div>
-</div>
-.carrossel {
-  display: flex;
-  overflow-x: scroll;
-  width: 100%; /* Tamanho do carrossel */
-  scroll-snap-type: x mandatory; /* Para fazer o "snap" ao deslizar */
-}
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apresentação</title>
+    <meta name="description" content="potifólio simples para arquivar trabalhos">
+     <link rel="stylesheet" href="corpo.css">
+</head>
 
-.item {
-  flex: 0 0 auto; /* Evita que os itens se estiquem */
-  width: 300px; /* Largura dos itens */
-  height: 200px; /* Altura dos itens */
-  margin-right: 10px; /* Espaçamento entre os itens */
-  background-color: #4CAF50;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: white;
-  font-size: 20px;
-  scroll-snap-align: center; /* Alinha o item ao centro quando for "solto" */
-}
-grid
-<div class="carrossel-container">
-  <button class="prev">←</button>
-  <div class="carrossel">
-    <div class="item">Item 1</div>
-    <div class="item">Item 2</div>
-    <div class="item">Item 3</div>
-    <div class="item">Item 4</div>
-    <div class="item">Item 5</div>
-  </div>
-  <button class="next">→</button>
-</div>
-.carrossel-container {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 100%;
-}
+<body>
+    <!-- cabeçalho -->
 
-.carrossel {
-  display: flex;
-  overflow-x: scroll;
-  scroll-snap-type: x mandatory;
-  width: 80%; /* Ajuste o tamanho do carrossel */
-}
+    <header class="cabecalho">
+        <img src="foto.jpg" alt="imagem de perfil" class="imagem-perfil-cabecalho">
+        <nav class="cabecalho-menu">
+            <a>Home</a>
+            <a>Tecnologias de Proficiência</a>
+            <a>My works</a>
+            <button class="botao-contato"><a>Contact</a></button>
+        </nav>
+    </header>
+    
+    <main>
+         <!-- Home -->
+          <!-- Primeira Parte -->
+          <h1 >Seja bem-vindo</h1>
 
-.item {
-  flex: 0 0 auto;
-  width: 300px;
-  height: 200px;
-  margin-right: 10px;
-  background-color: #4CAF50;
-  color: white;
-  font-size: 20px;
-  scroll-snap-align: center;
-}
+        <section class="main-home-parte1">
+            <h3 class="h3">Sou estudante do curso Tecnólogo em Sistemas para Internet,
+                atualmente no quarto semestre. Também estou cursando Inglês pelo Núcleo de Línguas da UECE, 
+                onde estou no segundo semestre, e sou aluna do curso Técnico em Desenvolvimento de Sistemas pelo SENAI."</h3>
 
-button {
-  background-color: #333;
-  color: white;
-  border: none;
-  padding: 10px;
-  cursor: pointer;
-}
+            <img src="foto.jpg" alt="imagem de perfil" class="imagem-perfil">
+        </section>
+        
+        <!-- Tecnologias de Proficiência -->
+        <!-- Segunda Parte -->
+        <section>
+        <div class="main-tenologias-parte2">
+          <h1>Tecnologias de Proficiência</h1>
+           <img src="html.png" alt="html" class="imagem-html">
+           <img src="css.png" alt="css" class="imagem-css">
+           <img src="javaScript.png" alt="" class="imagem-javascript">
+           <img src="python.jpg" alt="" class="imagem-python">
+           <img src="django.png" alt="" class="imagem-django">
+        </div>
+        </section>
 
-button:hover {
-  background-color: #555;
-}
-document.querySelector('.next').addEventListener('click', function() {
-  document.querySelector('.carrossel').scrollBy({ left: 320, behavior: 'smooth' });
-});
+        <!-- My Works -->
+        <section>
+            <h1> My works</h1>
+            <div class="main-works-parte3">
+            <a class="item-work"></a>
+            <a class="item-work"></a>
+            <a class="item-work"></a>
+            <a class="item-work"></a>
+            <a class="item-work"></a>
+            <a class="item-work"></a>
+            <a class="item-work"></a>
+            <a class="item-work"></a>
+            </div>
+        </section>
+        <!-- Contact -->
+        <section>
+            <h1>Contato</h1>
+            <a href="https://wa.me/55997498663
+            " target="_blank">
+                <img src="WhatsApp.svg.png" class="item-contato"/>
+              </a>
+              <a href="
+              " target="_blank">
+                  <img src="gmail.jpg" class="item-contato"/>
+                </a>
+                <a href="
+                " target="_blank">
+                    <img src="github.jpg" class="item-contato"/>
+                  </a>
+                  <a href="www.linkedin.com/in/abigail-souza-19aa32201
+                  " target="_blank">
+                      <img src="linkedin.jpg" class="item-contato"/>
+                    </a>
+                
+                </div>
+     
+        </section>
+    </main>
+    
+    <footer>
+        <p>&copy; 2024 Abigail Souza Santos</p>
+        
+    </footer>
+</body>
 
-document.querySelector('.prev').addEventListener('click', function() {
-  document.querySelector('.carrossel').scrollBy({ left: -320, behavior: 'smooth' });
-});
+</html>
+
+
+
+
