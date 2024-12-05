@@ -1,1 +1,119 @@
-oi 
+/*body*/
+body{
+    background: linear-gradient(68.15deg, #320252 16.62% , #181e22 82.61%);
+    color: #e2bdbd  ;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    border:20px;
+}
+/*header*/
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    color: #ddb7b7;
+}
+.imagem-perfil-cabecalho{
+    text-align: left;
+    width: 20px; 
+    height: 20px; 
+    border-radius: 50%;
+    object-fit: cover;/*usado para a imgaem ser "cortada" onde eu não precisar*/
+   
+}
+.cabecalho-menu{
+    display: flex;
+    gap: 20px;   
+}
+.botao-contato{
+    color: #ddb7b7;
+    border-radius: 15%;
+    background-color: #1c2527;
+}
+
+
+/*main*/
+main{
+    border-top: 0.4px solid rgb(197, 157, 243);
+}
+h1{ 
+    text-align: center;
+}
+
+.main-home-parte1{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    justify-content: center;
+    height: 420px;
+    
+} 
+.h3{
+     width: 400px;
+     height: auto;
+}
+
+.imagem-perfil{
+    width: 160px; 
+    height: 200px; 
+    border-radius: 5%; 
+    object-fit: cover; 
+    
+}
+.main-tenologias-parte2{
+    text-align: center;
+    height: 430px;
+}
+.imagem-html{
+    height: 50px;
+    width: 50px;
+    border-radius: 10%;
+}
+.imagem-css{
+    height: 50px;
+    width: 50px;
+    border-radius: 10%;
+}
+.imagem-javascript{
+    height: 100;
+    width: 55px;
+    border-radius: 10%;
+}
+.imagem-python{
+    height: 50px;
+    width: 50px;
+    border-radius: 10%;
+}
+.imagem-django{
+    height: 50px;
+    width: 50px;
+    border-radius: 10%;
+}
+.main-works-parte3{
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    height: 420px;
+}
+.item-work{
+    background-color: bisque;
+    width: 80px;
+    height: 80px;
+}
+.item-contato{
+    height: 30px;
+    width: 30px;
+
+}
+/* footer */
+footer {
+    text-align: center;
+    padding: 10px;
+    color: #ddb7b7;
+    position: relative;
+    width: 100%;
+    bottom: 0;
+}
