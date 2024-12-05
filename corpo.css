@@ -117,3 +117,32 @@ footer {
     width: 100%;
     bottom: 0;
 }
+a[href="#secao1"] {
+    color: inherit; /* Herda a cor do elemento pai */
+    text-decoration: none; /* Remove o sublinhado */
+  } 
+  a[href="#secao1"]:hover {
+    color: blue; /* Cor que você deseja ao passar o mouse */
+  }
+a[href="#secao2"] {
+    color: inherit; /* Herda a cor do elemento pai */
+    text-decoration: none; /* Remove o sublinhado */
+}
+a[href="#secao2"]:hover {
+    color: blue; /* Cor que você deseja ao passar o mouse */
+  }
+a[href="#secao3"] {
+    color: inherit; /* Herda a cor do elemento pai */
+    text-decoration: none; /* Remove o sublinhado */
+}
+a[href="#secao3"]:hover {
+    color: blue; /* Cor que você deseja ao passar o mouse */
+  }
+a[href="#secao4"] {
+    color: inherit; /* Herda a cor do elemento pai */
+    text-decoration: none; /* Remove o sublinhado */
+}
+a[href="#secao4"]:hover {
+    color: blue; /* Cor que você deseja ao passar o mouse */
+  }
+/*estudar configurações de âncoras*/
