@@ -1,2 +1,2 @@
 # abigail_portifolio
-meu portifolio básico em html
+meu portifolio básico em html, css, e javascript
