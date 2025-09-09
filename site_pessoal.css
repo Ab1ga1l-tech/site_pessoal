@@ -1,148 +1,168 @@
-/*body*/
-body{
-    background: linear-gradient(68.15deg, #320252 16.62% , #181e22 82.61%);
-    color: #e2bdbd  ;
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    border:20px;
+/* ----------- Cores principais ----------- */
+:root {
+    --branco: #FFFFFF;
+    --offwhite: #F8F7F4;
+    --terracota: #E07A5F;
+    --bege: #F2E8CF;
+    --marrom: #6D4C41;
+    --grafite: #333333;
 }
-/*header*/
 
+/* ----------- Reset ----------- */
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    color: var(--grafite);
+    background-color: var(--offwhite);
+    line-height: 1.6;
+}
+
+/* ----------- Cabeçalho ----------- */
 header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px;
-    color: #ddb7b7;
+    background: var(--branco);
+    padding: 15px 40px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    position: sticky;
+    top: 0;
+    z-index: 10;
 }
-.imagem-perfil-cabecalho{
-    text-align: left;
-    width: 20px; 
-    height: 20px; 
+
+.imagem-perfil-cabecalho {
+    width: 45px; 
+    height: 45px; 
     border-radius: 50%;
-    object-fit: cover;/*usado para a imgaem ser "cortada" onde eu não precisar*/
-   
+    object-fit: cover;
 }
-.cabecalho-menu{
+
+.cabecalho-menu {
     display: flex;
-    gap: 20px;   
-}
-.botao-contato{
-    color: #ddb7b7;
-    border-radius: 15%;
-    background-color: #1c2527;
+    gap: 25px;   
 }
 
-
-/*main*/
-main{
-    border-top: 0.4px solid rgb(197, 157, 243);
+.cabecalho-menu a {
+    text-decoration: none;
+    color: var(--grafite);
+    font-weight: bold;
+    transition: color 0.3s;
 }
-h1{ 
+
+.cabecalho-menu a:hover {
+    color: var(--terracota);
+}
+
+.botao-contato {
+    background: var(--terracota);
+    padding: 8px 16px;
+    border-radius: 20px;
+    color: var(--branco) !important;
+    text-decoration: none;
+    transition: background 0.3s;
+}
+.botao-contato:hover {
+    background: var(--marrom);
+}
+
+/* ----------- Seções ----------- */
+.secao {
+    padding: 60px 20px;
     text-align: center;
 }
 
-.main-home-parte1{
+.secao-clara {
+    background: var(--offwhite);
+}
+
+.secao-alternada {
+    background: var(--bege);
+}
+
+h1 {
+    color: var(--marrom);
+    margin-bottom: 20px;
+}
+
+/* ----------- Home ----------- */
+.main-home-parte1 {
     display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     align-items: center;
-    gap: 30px;
-    justify-content: center;
-    height: 420px;
-    
-} 
-.h3{
-     width: 400px;
-     height: auto;
+    gap: 40px;
 }
 
-.imagem-perfil{
-    width: 160px; 
-    height: 200px; 
-    border-radius: 5%; 
-    object-fit: cover; 
-    
+.texto-intro {
+    max-width: 450px;
+    text-align: left;
 }
-.main-tenologias-parte2{
-    text-align: center;
-    height: 430px;
+
+.imagem-perfil {
+    width: 180px; 
+    height: 220px; 
+    border-radius: 10px; 
+    object-fit: cover;
 }
-.imagem-html{
-    height: 50px;
-    width: 50px;
-    border-radius: 10%;
-}
-.imagem-css{
-    height: 50px;
-    width: 50px;
-    border-radius: 10%;
-}
-.imagem-javascript{
-    height: 100;
-    width: 55px;
-    border-radius: 10%;
-}
-.imagem-python{
-    height: 50px;
-    width: 50px;
-    border-radius: 10%;
-}
-.imagem-django{
-    height: 50px;
-    width: 50px;
-    border-radius: 10%;
-}
-.main-works-parte3{
+
+/* ----------- Tecnologias ----------- */
+.main-tecnologias-parte2 {
     display: flex;
-    gap: 30px;
     justify-content: center;
-    height: 420px;
+    gap: 25px;
+    flex-wrap: wrap;
 }
-.item-work{
-    background-color: bisque;
-    width: 80px;
-    height: 80px;
-}
-.item-contato{
-    height: 30px;
-    width: 30px;
 
+.icone-tech {
+    height: 60px;
+    width: 60px;
+    border-radius: 12%;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
 }
-/* footer */
-footer {
+
+/* ----------- Projetos ----------- */
+.main-works-parte3 {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.item-work {
+    background-color: var(--terracota);
+    color: var(--branco);
+    padding: 20px;
+    border-radius: 10px;
+    width: 120px;
     text-align: center;
-    padding: 10px;
-    color: #ddb7b7;
-    position: relative;
-    width: 100%;
-    bottom: 0;
+    transition: background 0.3s;
 }
-a[href="#secao1"] {
-    color: inherit; /* Herda a cor do elemento pai */
-    text-decoration: none; /* Remove o sublinhado */
-  } 
-  a[href="#secao1"]:hover {
-    color: blue; /* Cor que você deseja ao passar o mouse */
-  }
-a[href="#secao2"] {
-    color: inherit; /* Herda a cor do elemento pai */
-    text-decoration: none; /* Remove o sublinhado */
+
+.item-work:hover {
+    background-color: var(--marrom);
 }
-a[href="#secao2"]:hover {
-    color: blue; /* Cor que você deseja ao passar o mouse */
-  }
-a[href="#secao3"] {
-    color: inherit; /* Herda a cor do elemento pai */
-    text-decoration: none; /* Remove o sublinhado */
+
+/* ----------- Contato ----------- */
+.contatos {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
 }
-a[href="#secao3"]:hover {
-    color: blue; /* Cor que você deseja ao passar o mouse */
-  }
-a[href="#secao4"] {
-    color: inherit; /* Herda a cor do elemento pai */
-    text-decoration: none; /* Remove o sublinhado */
+
+.item-contato {
+    height: 35px;
+    width: 35px;
+    transition: transform 0.3s;
 }
-a[href="#secao4"]:hover {
-    color: blue; /* Cor que você deseja ao passar o mouse */
-  }
-/*estudar configurações de âncoras*/
+
+.item-contato:hover {
+    transform: scale(1.1);
+}
+
+/* ----------- Rodapé ----------- */
+footer {
+    background: var(--marrom);
+    color: var(--offwhite);
+    text-align: center;
+    padding: 15px;
+}
