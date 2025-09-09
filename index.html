@@ -3,101 +3,84 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Apresentação</title>
-    <meta name="description" content="potifólio simples para arquivar trabalhos">
-     <link rel="stylesheet" href="site_pessoal.css">
+    <title>Portfólio - Abigail Souza</title>
+    <meta name="description" content="Portfólio pessoal de Abigail Souza, estudante de Sistemas para Internet.">
+    <link rel="stylesheet" href="site_pessoal.css">
 </head>
 
 <body>
     <!-- cabeçalho -->
-
     <header class="cabecalho">
         <img src="foto.jpg" alt="imagem de perfil" class="imagem-perfil-cabecalho">
         <nav class="cabecalho-menu">
             <a href="#secao1">Home</a>
-            <a href="#secao1">Tecnologias de Proficiência</a>
-            <a href="#secao1">My works</a>
-            <button class="botao-contato"><a href="#secao4">Contact</a></button>
+            <a href="#secao2">Tecnologias</a>
+            <a href="#secao3">Projetos</a>
+            <a href="#secao4" class="botao-contato">Contato</a>
         </nav>
     </header>
     
     <main>
-         <!-- Home -->
-          <!-- Primeira Parte -->
-          <h1 >Seja bem-vindo</h1>
-
-       <section id="secao1">
-            <h1 >Seja bem-vindo</h1>
-
-          <div class="main-home-parte1">
-              <h3 class="h3">Sou estudante do curso Tecnólogo em Sistemas para Internet,
-                  atualmente no quarto semestre. Também estou cursando Inglês pelo Núcleo de Línguas da UECE, 
-                  onde estou no segundo semestre, e sou aluna do curso Técnico em Desenvolvimento de Sistemas pelo SENAI."</h3>
-  
-              <img src="foto.jpg" alt="imagem de perfil" class="imagem-perfil">
-           </div>
-          </section>
-        
-        <!-- Tecnologias de Proficiência -->
-        <!-- Segunda Parte -->
-        <section id="secao2">
-        <div class="main-tenologias-parte2">
-          <h1>Tecnologias de Proficiência</h1>
-           <img src="html.png" alt="html" class="imagem-html">
-           <img src="css.png" alt="css" class="imagem-css">
-           <img src="javaScript.png" alt="" class="imagem-javascript">
-           <img src="python.jpg" alt="" class="imagem-python">
-           <img src="django.png" alt="" class="imagem-django">
-        </div>
-        </section>
-
-        <!-- My Works -->
-        <section id="secao3">
-            <h1> My works</h1>
-            <div class="main-works-parte3">
-            <a class="item-work"></a>
-            <a class="item-work"></a>
-            <a class="item-work"></a>
-            <a class="item-work"></a>
-            <a class="item-work"></a>
-            <a class="item-work"></a>
-            <a class="item-work"></a>
-            <a class="item-work"></a>
+        <!-- Home -->
+        <section id="secao1" class="secao secao-clara">
+            <div class="main-home-parte1">
+                <div>
+                    <h1>Seja bem-vindo 👋</h1>
+                    <p class="texto-intro">
+                        Sou estudante do curso Tecnólogo em <strong>Sistemas para Internet</strong>, 
+                        atualmente no quarto semestre. Também curso Inglês pelo Núcleo de Línguas da UECE, 
+                        e sou aluna do curso Técnico em <strong>Desenvolvimento de Sistemas</strong> pelo SENAI.
+                    </p>
+                </div>
+                <img src="foto.jpg" alt="imagem de perfil" class="imagem-perfil">
             </div>
         </section>
-        <!-- Contact -->
-        <section id="secao4">
+        
+        <!-- Tecnologias -->
+        <section id="secao2" class="secao secao-alternada">
+            <h1>Tecnologias de Proficiência</h1>
+            <div class="main-tecnologias-parte2">
+                <img src="html.png" alt="HTML" class="icone-tech">
+                <img src="css.png" alt="CSS" class="icone-tech">
+                <img src="javaScript.png" alt="JavaScript" class="icone-tech">
+                <img src="python.jpg" alt="Python" class="icone-tech">
+                <img src="django.png" alt="Django" class="icone-tech">
+            </div>
+        </section>
+
+        <!-- Projetos -->
+        <section id="secao3" class="secao secao-clara">
+            <h1>Meus Projetos</h1>
+            <div class="main-works-parte3">
+                <a class="item-work">Projeto 1</a>
+                <a class="item-work">Projeto 2</a>
+                <a class="item-work">Projeto 3</a>
+                <a class="item-work">Projeto 4</a>
+            </div>
+        </section>
+
+        <!-- Contato -->
+        <section id="secao4" class="secao secao-alternada">
             <h1>Contato</h1>
-            <a href="https://wa.me/55997498663
-            " target="_blank">
-                <img src="WhatsApp.svg.png" class="item-contato"/>
-              </a>
-              <a href="
-              " target="_blank">
-                  <img src="gmail.jpg" class="item-contato"/>
+            <div class="contatos">
+                <a href="https://wa.me/55997498663" target="_blank">
+                    <img src="WhatsApp.svg.png" class="item-contato"/>
                 </a>
-                <a href="
-                " target="_blank">
+                <a href="mailto:seuemail@gmail.com" target="_blank">
+                    <img src="gmail.jpg" class="item-contato"/>
+                </a>
+                <a href="https://github.com/seuusuario" target="_blank">
                     <img src="github.jpg" class="item-contato"/>
-                  </a>
-                  <a href="www.linkedin.com/in/abigail-souza-19aa32201
-                  " target="_blank">
-                      <img src="linkedin.jpg" class="item-contato"/>
-                    </a>
-                
-                </div>
-     
+                </a>
+                <a href="https://www.linkedin.com/in/abigail-souza-19aa32201" target="_blank">
+                    <img src="linkedin.jpg" class="item-contato"/>
+                </a>
+            </div>
         </section>
     </main>
     
     <footer>
-        <p>&copy; 2024 Abigail Souza Santos</p>
-        
+        <p>&copy; 2025 Abigail Souza Santos</p>
     </footer>
 </body>
-
 </html>
-
-
-
-
